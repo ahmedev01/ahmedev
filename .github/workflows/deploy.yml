@@ -1,0 +1,51 @@
+name: Deploy Ahmedev
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24.12.0
+          cache: 'npm'
+
+      # Astro handles the heavy lifting inside GitHub's environment
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Static Files
+        run: npm run build
+
+      # Only the optimized HTML/CSS/JS files inside dist/ are uploaded
+      - name: Deploy via SSH rsync
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.SSH_HOST }}
+          REMOTE_USER: ${{ secrets.SSH_USER }}
+          REMOTE_PORT: ${{ secrets.SSH_PORT }}
+          SOURCE: "dist/" 
+          TARGET: "/www/wwwroot/ahmdev"
+          EXCLUDE: "/.git/, /.github/"
+
+      # Set permissions so Nginx can read the files without 403 Forbidden errors
+      - name: Fix Permissions on Server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            chown -R www:www /www/wwwroot/ahmdev
+            chmod -R 755 /www/wwwroot/ahmdev
