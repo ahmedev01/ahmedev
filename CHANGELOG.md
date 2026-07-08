@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [v3.0.2](https://github.com/ahmedev01/ahmedev_files/releases/tag/v3.0.2) | 2026-07-08
+
+### Bug Fixes
+- deploy commands using pnpm [a1c7670](https://github.com/ahmedev01/ahmedev_files/commit/a1c7670)
+
 ## [v3.0.1](https://github.com/ahmedev01/ahmedev_files/releases/tag/v3.0.1) | 2026-07-08
 
 ### Other
