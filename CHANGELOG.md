@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## [v3.0.1](https://github.com/ahmedev01/ahmedev_files/releases/tag/v3.0.1) | 2026-07-08
+
+### Other
+- change the base astro theme [23bf37f](https://github.com/ahmedev01/ahmedev_files/commit/23bf37f)
+- add new theme [c612edd](https://github.com/ahmedev01/ahmedev_files/commit/c612edd)
+- fix deploy file [69a2413](https://github.com/ahmedev01/ahmedev_files/commit/69a2413)
+- fix deploy 2 [726f33e](https://github.com/ahmedev01/ahmedev_files/commit/726f33e)
+- fix deploy [7bcfb43](https://github.com/ahmedev01/ahmedev_files/commit/7bcfb43)
+- initial astro ssg build [eadcd7f](https://github.com/ahmedev01/ahmedev_files/commit/eadcd7f)
+- "Initial commit from Astro" [85426ea](https://github.com/ahmedev01/ahmedev_files/commit/85426ea)
+- Initial commit [94ab004](https://github.com/ahmedev01/ahmedev_files/commit/94ab004)
+
 ## [v3.0.0](https://github.com/A58361/Ryze/releases/tag/v3.0.0) | 2026-06-01
 
 ### Features
