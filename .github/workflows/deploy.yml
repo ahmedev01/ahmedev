@@ -17,14 +17,14 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 24
-          cache: 'npm'
+          cache: 'pnpm'
 
       # Astro handles the heavy lifting inside GitHub's environment
       - name: Install Dependencies
-        run: npm ci
+        run: pnpm install
 
       - name: Build Static Files
-        run: npm run build
+        run: pnpm build
 
       # Only the optimized HTML/CSS/JS files inside dist/ are uploaded
       - name: Deploy via SSH rsync
