@@ -1,242 +1,142 @@
-/* Editorial Typography System */
+@import "@/styles/global.css";
+@import "tailwindcss";
 
-/* Headings - Base styles (no margin-top, suitable for UI components) */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-tight);
-  color: var(--color-text);
-  margin-top: 0;
-  margin-bottom: var(--space-md);
-}
+@layer base {
+    .prose {
+        @apply text-base leading-relaxed text-secondary-foreground/80;
 
-h1 {
-  font-size: var(--font-size-5xl);
-  letter-spacing: -0.02em;
-  margin-bottom: var(--space-lg);
-}
+        /* Headings */
+        h2 {
+            @apply text-4xl text-secondary-foreground font-semibold mt-21 mb-5 border-b border-border pb-3 opacity-90;
+        }
+        h3 {
+            @apply text-3xl text-secondary-foreground font-semibold mt-10 mb-4 border-b border-border pb-1 opacity-90;
+        }
+        h4 {
+            @apply text-2xl text-secondary-foreground font-semibold mt-8 mb-3 opacity-90;
+        }
 
-h2 {
-  font-size: var(--font-size-4xl);
-  letter-spacing: -0.01em;
-}
+        p {
+            @apply text-base leading-relaxed text-secondary-foreground/80;
+        }
 
-h3 {
-  font-size: var(--font-size-3xl);
-}
+        a {
+            @apply text-secondary-foreground font-medium underline underline-offset-6 hover:underline-offset-3 active:bg-secondary-foreground active:text-background transition-all duration-150 decoration-muted-foreground decoration-1 text-base;
+        }
 
-h4 {
-  font-size: var(--font-size-2xl);
-}
+        ul {
+            @apply list-disc list-outside mt-3 ml-6 mb-5 space-y-1 text-base;
+        }
+        ol {
+            @apply list-decimal list-outside mt-3 ml-8 mb-5 space-y-1 text-base;
+        }
+        li {
+            @apply leading-relaxed text-base text-secondary-foreground/80;
+        }
+        li > ul,
+        li > ol {
+            @apply mt-1 mb-0 text-base;
+        }
 
-h5 {
-  font-size: var(--font-size-xl);
-}
+        blockquote {
+            @apply border border-border border-l-3 bg-muted border-l-secondary-foreground/80 py-3 px-5 my-6 not-italic;
+        }
+        blockquote p {
+            @apply my-0 text-muted-foreground text-base;
+        }
 
-h6 {
-  font-size: var(--font-size-lg);
-}
+        code:not(pre code) {
+            @apply px-1 py-0.5 border border-border text-sm rounded font-mono bg-muted text-secondary-foreground/80;
+        }
 
-/* Prose context - margin-top for article/content flow */
-.prose h2 {
-  margin-top: var(--space-3xl);
-  margin-bottom: var(--space-lg);
-}
+        pre.astro-code {
+            @apply my-6 overflow-x-auto text-sm leading-relaxed;
+        }
+        pre.astro-code code {
+            @apply bg-muted p-3 text-sm font-mono leading-relaxed block;
+        }
+        pre.astro-code .line {
+            @apply visible;
+        }
 
-.prose h3 {
-  margin-top: var(--space-2xl);
-}
+        .math-display {
+            @apply my-6 overflow-x-auto text-base;
+        }
+        .math-inline {
+            @apply text-base;
+        }
 
-.prose h4 {
-  margin-top: var(--space-xl);
-}
+        hr {
+            @apply my-10 border-t border-dotted border-10 w-1/8 mx-auto border-border;
+        }
 
-.prose h5,
-.prose h6 {
-  margin-top: var(--space-lg);
-}
+        img {
+            @apply my-6 max-w-full border border-border;
+        }
 
-/* Paragraphs */
-p {
-  margin-bottom: var(--space-lg);
-  line-height: var(--line-height-relaxed);
-  color: var(--color-text-secondary);
-}
+        figure {
+            @apply my-10;
+            img {
+                @apply my-0 mx-auto;
+            }
+            figcaption {
+                @apply mt-2 text-sm text-center text-muted-foreground;
+            }
+        }
 
-p:last-child {
-  margin-bottom: 0;
-}
+        table {
+            @apply w-full border-collapse my-3 overflow-x-auto block no-scrollbar;
+        }
+        th {
+            @apply border border-border bg-muted px-3 py-2 text-left font-semibold text-sm uppercase tracking-wide opacity-90 text-secondary-foreground;
+        }
+        td {
+            @apply border border-border px-3 py-2 text-sm text-secondary-foreground/80;
+        }
+        tr:nth-child(even) {
+            @apply bg-muted/30;
+        }
 
-/* Lead Paragraph */
-.lead {
-  font-size: var(--font-size-xl);
-  line-height: var(--line-height-relaxed);
-  color: var(--color-text);
-  margin-bottom: var(--space-xl);
-}
+        strong {
+            @apply font-semibold text-foreground;
+        }
+        em {
+            @apply italic;
+        }
+        strong em {
+            @apply font-semibold italic;
+        }
 
-/* Lists */
-ul,
-ol {
-  margin-bottom: var(--space-lg);
-  padding-left: var(--space-xl);
-  color: var(--color-text-secondary);
-}
+        abbr {
+            @apply underline decoration-dotted cursor-help text-muted-foreground;
+        }
 
-ul {
-  list-style-type: disc;
-}
+        details {
+            @apply my-6 border border-border px-5;
+        }
+        summary {
+            @apply cursor-pointer font-semibold py-3;
+        }
 
-ol {
-  list-style-type: decimal;
-}
+        kbd {
+            @apply text-secondary-foreground px-1.5 py-0.5 text-xs font-mono border border-secondary-foreground;
+        }
 
-li {
-  margin-bottom: var(--space-sm);
-  line-height: var(--line-height-relaxed);
-}
+        mark {
+            @apply bg-secondary-foreground text-secondary px-1;
+        }
 
-li:last-child {
-  margin-bottom: 0;
-}
-
-/* Nested Lists */
-ul ul,
-ol ol,
-ul ol,
-ol ul {
-  margin-top: var(--space-sm);
-  margin-bottom: var(--space-sm);
-}
-
-/* Blockquotes */
-blockquote {
-  border-left: 4px solid var(--color-border);
-  padding-left: var(--space-lg);
-  margin: var(--space-xl) 0;
-  font-style: italic;
-  color: var(--color-text-secondary);
-}
-
-blockquote p {
-  margin-bottom: var(--space-md);
-}
-
-/* Horizontal Rule */
-hr {
-  border: none;
-  border-top: 1px solid var(--color-border);
-  margin: var(--space-3xl) 0;
-}
-
-/* Strong and Emphasis */
-strong,
-b {
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-text);
-}
-
-em,
-i {
-  font-style: italic;
-}
-
-/* Small Text */
-small {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-muted);
-}
-
-/* Links in Content */
-.prose a {
-  color: var(--color-accent);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
-  transition: all 0.2s ease;
-}
-
-.prose a:hover {
-  color: var(--color-accent-hover);
-  text-decoration-thickness: 2px;
-}
-
-/* Code in Typography */
-.prose code {
-  font-size: var(--font-size-sm);
-}
-
-.prose pre {
-  margin: var(--space-xl) 0;
-}
-
-/* Tables */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: var(--space-xl) 0;
-}
-
-th,
-td {
-  padding: var(--space-sm) var(--space-md);
-  text-align: left;
-  border-bottom: 1px solid var(--color-border);
-}
-
-th {
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-text);
-}
-
-td {
-  color: var(--color-text-secondary);
-}
-
-/* Typography Utilities */
-.text-muted {
-  color: var(--color-text-muted);
-}
-
-.text-secondary {
-  color: var(--color-text-secondary);
-}
-
-.text-primary {
-  color: var(--color-text);
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-/* Responsive Typography */
-@media (max-width: 768px) {
-  h1 {
-    font-size: var(--font-size-4xl);
-  }
-  
-  h2 {
-    font-size: var(--font-size-3xl);
-  }
-  
-  h3 {
-    font-size: var(--font-size-2xl);
-  }
-  
-  h4 {
-    font-size: var(--font-size-xl);
-  }
-  
-  .lead {
-    font-size: var(--font-size-lg);
-  }
+        ul:has(input[type="checkbox"]) {
+            @apply list-none ml-0;
+        }
+        ul:has(input[type="checkbox"]) li {
+            @apply flex items-center gap-2;
+        }
+        ul:has(input[type="checkbox"]) li::before {
+            content: none;
+        }
+        ul:has(input[type="checkbox"]) input[type="checkbox"] {
+            @apply accent-foreground;
+        }
+    }
 }

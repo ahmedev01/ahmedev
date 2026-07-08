@@ -16,49 +16,18 @@ pnpm-debug.log*
 # environment variables
 .env
 .env.production
-.env.development
-.env.staging
-.env.test
-.env.local
-.env.*.local
 
-# macOS
+# macOS-specific files
 .DS_Store
-.AppleDouble
-.LSOverride
 
-# Windows
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-Desktop.ini
-
-# Linux
-*~
-.directory
-.Trash-*
-
-# test coverage
-coverage/
-*.lcov
-
-# caches
-.cache/
-.eslintcache
-*.tsbuildinfo
-.turbo/
-.npm/
-.yarn-integrity
-
-# IDEs and editors
-.vscode/
+# jetbrains setting folder
 .idea/
-*.swp
-*.swo
-*~
-.kiro
-.project
-.classpath
-.settings/
-*.sublime-project
-*.sublime-workspace
+
+# vscode setting folder
+.vscode/
+
+# claude
+.claude/
+
+# aureus-setup-anchor
+node_modules/
