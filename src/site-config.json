@@ -1,6 +1,6 @@
 {
-  "github": { "owner": "A58361", "repo": "ryze" },
-  "domain": "https://ryze.pages.dev",
+  "github": { "owner": "ahmedev01", "repo": "ahmedev_files" },
+  "domain": "https://ahmedev.com",
   "bNavigation": true,
   "homeLabel": "home",
   "navigationItems": ["portfolio", "blog"],
@@ -9,18 +9,18 @@
   "bRssFeed": true,
   "bIntroduction": true,
   "introduction": {
-    "badges": ["Software Developer"],
-    "heading": "Jane Doe",
+    "badges": ["System Engineer"],
+    "heading": "Ahmed Benali",
     "subHeadingItems": [
       {
         "type": "mail",
-        "label": "jane.doe@example.com",
-        "url": "mailto:john.doe@example.com"
+        "label": "me@ahmedev.com",
+        "url": "mailto:me@ahmedev.com"
       },
       {
         "type": "address",
-        "label": "San Francisco, CA",
-        "url": "https://www.google.com/maps/place/San+Francisco"
+        "label": "Mornaguia, TN",
+        "url": "https://www.google.com/maps/place/Mornaguia"
       }
     ],
     "socialItems": [
@@ -35,6 +35,6 @@
   "featured": {
     "portfolio": { "visible": true },
     "blog": { "visible": true },
-    "important": "blog"
+    "important": "portfolio"
   }
 }
