@@ -10,9 +10,9 @@ export const collections = {
       date: z.string(),
       title: z.string(),
       description: z.string(),
-      category: z.enum(["engineering", "workflow", "strategy", "devlog"]),
+      category: z.enum(["engineering", "workflow", "strategy", "devlog", "personal"]),
       tags: z.array(z.string()).optional().default([]),
-      author: z.string().optional().default("Subhashis Hansda"),
+      author: z.string().optional().default("Ahmed Benali"),
     }),
   }),
 };

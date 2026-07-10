@@ -1,13 +1,6 @@
 <div align="center">
-  <h1>Ryze</h1>
-  <p>A modern blog & portfolio starter built with Astro 6</p>
-  <p>
-    <a href="#features">Features</a> •
-    <a href="#quick-start">Quick Start</a> •
-    <a href="#configuration">Configuration</a> •
-    <a href="#customization">Customization</a> •
-    <a href="#deployment">Deployment</a>
-  </p>
+  <h1>Ahmedev Portfolio</h1>
+  <p>My personal website built with Astro and inspired by the Ryze theme</p>
   <p>
     <img src="https://img.shields.io/badge/Astro_6-FF5D01?logo=astro&logoColor=white" alt="Astro 6" />
     <img src="https://img.shields.io/badge/React_19-61DAFB?logo=react&logoColor=black" alt="React 19" />
@@ -17,7 +10,7 @@
   </p>
 </div>
 
-Ryze is a production-ready starter for personal portfolio and blog sites. It ships with a blog engine, portfolio system, resume page, RSS feed, full-text search, dark mode, dynamic OG images, and interactive components - all configurable from JSON files.
+This is a production-ready starter for personal portfolio and blog sites. It ships with a blog engine, portfolio system, resume page, RSS feed, full-text search, dark mode, dynamic OG images, and interactive components - all configurable from JSON files.
 
 Built on [Astro 6](https://astro.build), [React 19](https://react.dev), [Tailwind CSS 4](https://tailwindcss.com), and [shadcn/ui](https://ui.shadcn.com).
 
@@ -177,10 +170,10 @@ Client-side React islands - JavaScript only loads when they become interactive.
 
 ```bash
 # Clone the repository
-git clone https://github.com/A58361/ryze.git
+git clone https://github.com/ahmedev01/ahmedev_files.git
 
 # Navigate to the project
-cd ryze
+cd ahmedev_files
 
 # Install dependencies
 pnpm install
@@ -209,7 +202,7 @@ pnpm preview
 
 ## Configuration
 
-Ryze is configured through three JSON files - no editing of components needed for basic customization.
+Ahmedev is configured through three JSON files - no editing of components needed for basic customization.
 
 ### `src/site-config.json`
 
@@ -320,16 +313,27 @@ Before deploying, update the `site` field in `astro.config.mjs` and the `domain`
 
 ## Deployment
 
-Ryze produces static files - deploy to any static host:
+Ahmedev produces static files - deploy to any static host:
 
 1. Update `site` in `astro.config.mjs` and `domain` in `site-config.json` to your domain
 2. Run `pnpm build`
 3. Deploy the `dist/` directory
 
-**Recommended hosts**: Cloudflare Pages, Netlify, Vercel, GitHub Pages.
+**Recommended hosts**: Cloudflare Pages, Netlify, GitHub Pages and Self-host.
 
 ---
 
 ## License
 
 [GNU General Public License v3.0](LICENSE.md)
+
+## Ahmedev website CI/CD
+
+| Layer | Technology |
+|-------|-----------|
+| Development | [Local Repo]()|
+| Remote Repo | [Github]() |
+| CI/CD Pipeline | [Github Actions]() |
+| Deploymnt server | [Self-hosted VPS]() |
+| Git Hooks | [Husky](https://typicode.github.io/husky) |
+

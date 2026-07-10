@@ -15,9 +15,9 @@ export interface Props {
 }
 
 const {
-    title = "Ryze",
-    description = "A minimalist Astro starter for personal portfolio and blogs.",
-    author = "Subhashis Hansda",
+    title = "Ahmedev",
+    description = "My personal portfolio, drafts, thoughts and blogs.",
+    author = "Ahmed Benali",
     canonicalURL = new URL(Astro.url.pathname, Astro.url),
     pubDate,
     image,
@@ -36,7 +36,7 @@ const imageURL = image ? new URL(image, Astro.site) : undefined;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <link rel="alternate" type="application/rss+xml" title="Ryze" href={new URL("rss.xml", Astro.site)} />
+    <link rel="alternate" type="application/rss+xml" title="Ahmedev" href={new URL("rss.xml", Astro.site)} />
     <link href="/pagefind/pagefind-component-ui.css" rel="stylesheet" />
     <script src="/pagefind/pagefind-component-ui.js" type="module"></script>
     <ClientRouter />
