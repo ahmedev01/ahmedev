@@ -2,8 +2,8 @@ import satori from "satori";
 import sharp from "sharp";
 import fs from "node:fs";
 
-const regularFont = fs.readFileSync("src/assets/fonts/Geist-Regular.ttf");
-const boldFont = fs.readFileSync("src/assets/fonts/Geist-Bold.ttf");
+const regularFont = fs.readFileSync("src/assets/fonts/inter-normal.ttf");
+const boldFont = fs.readFileSync("src/assets/fonts/inter-bold.ttf");
 
 export interface OGOptions {
   title: string;
@@ -29,7 +29,7 @@ export async function generateOGImage({
           display: "flex",
           flexDirection: "column",
           padding: "60px 80px",
-          fontFamily: "Geist",
+          fontFamily: "Inter",
         },
         children: [
           {
@@ -52,7 +52,7 @@ export async function generateOGImage({
                   type: "span",
                   props: {
                     style: { fontSize: 20, color: "#a1a1aa", fontWeight: 400 },
-                    children: "Ryze",
+                    children: "ahmedev",
                   },
                 },
               ],
@@ -139,13 +139,13 @@ export async function generateOGImage({
       height: 630,
       fonts: [
         {
-          name: "Geist",
+          name: "Inter",
           data: regularFont,
           weight: 400,
           style: "normal",
         },
         {
-          name: "Geist",
+          name: "Inter",
           data: boldFont,
           weight: 700,
           style: "normal",

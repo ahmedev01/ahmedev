@@ -1,5 +1,5 @@
 "use client";
-
+import site_config from "@/site-config.json";
 import type { portfolioConfig } from "@/lib/types";
 
 export function FeaturedPortfolioCard({ items }: { items: (portfolioConfig & { heroImage?: string })[] }) {
@@ -12,7 +12,7 @@ export function FeaturedPortfolioCard({ items }: { items: (portfolioConfig & { h
 
         return (
           <a key={item.id} href={`/portfolio/${item.id}`} className="group block bg-muted border border-border overflow-hidden hover:border-secondary-foreground/30 relative hover:bg-background active:scale-100 hover:scale-102 animation">
-            {firstImage && (
+            {site_config.bEnriched && firstImage && (
               <div className="aspect-4/3 overflow-hidden">
                 <img loading="lazy" width={1200} src={firstImage} alt={item.data.title} className="w-full h-full object-cover grayscale-100 group-hover:grayscale-0 animation" />
               </div>
@@ -21,9 +21,9 @@ export function FeaturedPortfolioCard({ items }: { items: (portfolioConfig & { h
             <div className="p-4 bg-muted group-hover:bg-card animation z-10">
               <span className="text-xs uppercase tracking-wider text-muted-foreground">{item.data.category}</span>
 
-              <span className="mt-2 text-xl font-medium leading-snug text-foreground/90 group-hover:text-foreground/90 animation line-clamp-1">{item.data.title}</span>
+              <span className="mt-2 text-lg font-medium leading-snug text-foreground/90 group-hover:text-foreground/90 animation line-clamp-1">{item.data.title}</span>
 
-              <p className="mt-1 text-sm text-muted-foreground line-clamp-2">{item.data.description}</p>
+              <p className="mt-1 text-xs text-muted-foreground line-clamp-2">{item.data.description}</p>
 
               {item.data.tags && item.data.tags.length > 0 && (
                 <div className="flex flex-wrap gap-1.5 mt-3">

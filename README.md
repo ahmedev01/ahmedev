@@ -93,7 +93,7 @@ Every page gets a unique Open Graph image generated at build time:
 - **Default**: `/og/default.png` - site-wide fallback
 - **Per-post**: `/og/blog/[id].png` - title, description, category, date
 - **Per-project**: `/og/portfolio/[id].png` - title, description, category, date
-- **Design**: Dark background (`#18181b`), Geist fonts, orange accent, responsive title sizing
+- **Design**: Dark background (`#18181b`), Inter & Fira Code fonts, orange accent, responsive title sizing
 
 Shared generation logic lives in `src/lib/og.ts`.
 
@@ -154,7 +154,7 @@ Client-side React islands - JavaScript only loads when they become interactive.
 | Diagrams | [Mermaid](https://mermaid.js.org) |
 | Syntax | [Shiki](https://shiki.style) |
 | Date | [date-fns](https://date-fns.org) |
-| Fonts | Geist Variable, Geist Mono Variable, JetBrains Mono Variable |
+| Fonts | Inter Variable, Fira Code Variable |
 | Git Hooks | [Husky](https://typicode.github.io/husky) |
 
 ---
@@ -170,10 +170,10 @@ Client-side React islands - JavaScript only loads when they become interactive.
 
 ```bash
 # Clone the repository
-git clone https://github.com/ahmedev01/ahmedev_files.git
+git clone https://github.com/ahmedev01/ahmedev.git
 
 # Navigate to the project
-cd ahmedev_files
+cd ahmedev
 
 # Install dependencies
 pnpm install

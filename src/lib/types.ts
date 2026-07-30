@@ -10,6 +10,7 @@ export interface siteConfig {
   introduction: {
     badges: string[];
     heading: string;
+    profilePicUrl?: string;
     subHeadingItems: {
       type: subHeadingIconType;
       label: string;
@@ -62,5 +63,5 @@ export type socialIconType = "linkedin" | "instagram" | "youtube" | "facebook" |
 
 type variantType = "default" | "secondary" | "outline" | "ghost" | "destructive" | "link" | null | undefined;
 
-export type portfolioCategoryType = "robotics" | "analytics" | "gameplay" | "software" | "ai" | "hardware";
-export type blogCategoryType = "engineering" | "workflow" | "strategy" | "devlog";
+export type portfolioCategoryType = "development" | "analytics" | "consulting" | "software" | "ai" | "engineering" | "business";
+export type blogCategoryType = "engineering" | "workflow" | "strategy" | "devlog" | "OSS" ;

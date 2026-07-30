@@ -1,26 +1,26 @@
 # CHANGELOG
 
-## [v3.0.3](https://github.com/ahmedev01/ahmedev_files/releases/tag/v3.0.3) | 2026-07-09
+## [v3.0.3](https://github.com/ahmedev01/ahmedev/releases/tag/v3.0.3) | 2026-07-09
 
 ### Bug Fixes
-- deploy commands using pnpm [39ef55d](https://github.com/ahmedev01/ahmedev_files/commit/39ef55d)
+- deploy commands using pnpm [39ef55d](https://github.com/ahmedev01/ahmedev/commit/39ef55d)
 
-## [v3.0.2](https://github.com/ahmedev01/ahmedev_files/releases/tag/v3.0.2) | 2026-07-08
+## [v3.0.2](https://github.com/ahmedev01/ahmedev/releases/tag/v3.0.2) | 2026-07-08
 
 ### Bug Fixes
-- deploy commands using pnpm [a1c7670](https://github.com/ahmedev01/ahmedev_files/commit/a1c7670)
+- deploy commands using pnpm [a1c7670](https://github.com/ahmedev01/ahmedev/commit/a1c7670)
 
-## [v3.0.1](https://github.com/ahmedev01/ahmedev_files/releases/tag/v3.0.1) | 2026-07-08
+## [v3.0.1](https://github.com/ahmedev01/ahmedev/releases/tag/v3.0.1) | 2026-07-08
 
 ### Other
-- change the base astro theme [23bf37f](https://github.com/ahmedev01/ahmedev_files/commit/23bf37f)
-- add new theme [c612edd](https://github.com/ahmedev01/ahmedev_files/commit/c612edd)
-- fix deploy file [69a2413](https://github.com/ahmedev01/ahmedev_files/commit/69a2413)
-- fix deploy 2 [726f33e](https://github.com/ahmedev01/ahmedev_files/commit/726f33e)
-- fix deploy [7bcfb43](https://github.com/ahmedev01/ahmedev_files/commit/7bcfb43)
-- initial astro ssg build [eadcd7f](https://github.com/ahmedev01/ahmedev_files/commit/eadcd7f)
-- "Initial commit from Astro" [85426ea](https://github.com/ahmedev01/ahmedev_files/commit/85426ea)
-- Initial commit [94ab004](https://github.com/ahmedev01/ahmedev_files/commit/94ab004)
+- change the base astro theme [23bf37f](https://github.com/ahmedev01/ahmedev/commit/23bf37f)
+- add new theme [c612edd](https://github.com/ahmedev01/ahmedev/commit/c612edd)
+- fix deploy file [69a2413](https://github.com/ahmedev01/ahmedev/commit/69a2413)
+- fix deploy 2 [726f33e](https://github.com/ahmedev01/ahmedev/commit/726f33e)
+- fix deploy [7bcfb43](https://github.com/ahmedev01/ahmedev/commit/7bcfb43)
+- initial astro ssg build [eadcd7f](https://github.com/ahmedev01/ahmedev/commit/eadcd7f)
+- "Initial commit from Astro" [85426ea](https://github.com/ahmedev01/ahmedev/commit/85426ea)
+- Initial commit [94ab004](https://github.com/ahmedev01/ahmedev/commit/94ab004)
 
 ## [v3.0.0](https://github.com/A58361/Ryze/releases/tag/v3.0.0) | 2026-06-01
 

@@ -100,7 +100,7 @@ export default function PortfolioGallery({ images, videoId, title }: { images: G
                   <>
                     <img loading="lazy" width={1920} src={`https://img.youtube.com/vi/${item.videoId}/default.jpg`} alt={item.alt} className="w-full h-full object-cover" />
                     <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-                      <span className="text-foreground text-xl leading-none">▶</span>
+                      <span className="text-foreground text-lg leading-none">▶</span>
                     </div>
                   </>
                 )}
@@ -116,7 +116,7 @@ export default function PortfolioGallery({ images, videoId, title }: { images: G
 
       {items.length > 1 && (
         <div className="mt-3 flex justify-center">
-          <span className="text-sm text-muted-foreground border border-border px-3 py-1">
+          <span className="text-xs text-muted-foreground border border-border px-3 py-1">
             {currentIndex + 1} / {items.length}
           </span>
         </div>

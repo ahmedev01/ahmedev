@@ -1,0 +1,38 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { RiHome2Line } from "@remixicon/react";
+import { buttonVariants } from "@/components/ui/button";
+---
+
+<BaseLayout title="My focuses" description="Things I'm looking into right now" image="/og/default.png">
+    <div class="flex flex-col justify-center min-h-[60vh] ml-8">
+        <h1 class="text-3xl font-semibold text-muted-foreground/60 select-none">Now</h1>
+        <h2 class="py-4 text-xl font-semibold select-none">Things I'm doing at the moment</h2>
+        <p><i>last update: 30/07/2026</i></p>
+        <h3>Exploring</h3>
+        <ul class="list-disc text-muted-foreground/80 text-sm pb-2 ml-6">
+            <li>AI tools but mostly Agentic AI.</li>
+            <li>Curios to dig deeper in AI workflows</li>
+            <li>Security involvement in vibe coding.</li>
+        </ul>
+        <h3>Learning</h3>
+        <ul class="list-disc text-muted-foreground/80 text-sm pb-2 ml-6">
+            <li>AI engineering theories.</li>
+            <li>Testing every JAM framework I coulD find.</li>
+            <li>Trying to figure out future evolution of SSR & SSG. I'm in love with astro right now.</li>
+        </ul>
+        <h3>Building</h3>
+        <ul class="list-disc text-muted-foreground/80 text-sm pb-2 ml-6">
+            <li>Tunpy a custom python compiler and editor for tunisian HSS.</li>
+            <li>An e-learning plateform.</li>
+            <li>Enjoying holidays.</li>
+        </ul>
+        <div class="flex gap-4 mt-8">
+            <a href="/" class={buttonVariants({ variant: "default" })}>
+                <RiHome2Line className="size-4 mr-2" />
+                Go Home
+            </a>
+            <a href="/blog" class={buttonVariants({ variant: "outline" })}> Browse Blog </a>
+        </div>
+    </div>
+</BaseLayout>

@@ -186,7 +186,7 @@ export function FilterControls<T extends FilterType>({ filter }: FilterControlsP
             <div className="max-h-32 overflow-y-auto overflow-x-hidden no-scrollbar pr-1">
               {allTags.map((tag) => (
                 <label key={tag} className="px-2 hover:bg-muted rounded-md flex cursor-pointer items-center justify-between gap-2 py-1">
-                  <span className="text-sm text-muted-foreground">{tag}</span>
+                  <span className="text-xs text-muted-foreground">{tag}</span>
                   <Checkbox checked={selectedTags.includes(tag)} onCheckedChange={() => handleTagToggle(tag)} />
                 </label>
               ))}

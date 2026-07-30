@@ -1,0 +1,45 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { RiHome2Line } from "@remixicon/react";
+import { buttonVariants } from "@/components/ui/button";
+---
+
+<BaseLayout title="Toolbox" description="What I use" image="/og/default.png">
+    <div class="flex flex-col justify-center min-h-[60vh] ml-8">
+        <h1 class="text-3xl font-semibold text-muted-foreground/60 select-none">Toolbox</h1>
+        <h2 class="py-4 text-xl font-semibold select-none">Things I'm using</h2>
+        <h3>Hardware</h3>
+        <ul class="list-disc text-muted-foreground/80 text-sm pb-2 ml-6">
+            <li>Laptop: HP Pavillon / Lenovo ThinkBook </li>
+            <li>Mouse: HP S1000 PLUS / Lenovo L300</li>
+            <li>Keyboard: iMICE GK-690</li>
+        </ul>
+        <h3>OS</h3>
+        <ul class="list-disc text-muted-foreground/80 text-sm pb-2 ml-6">
+            <li>Laptop: Linux for development / Windows for education </li>
+            <li>Server: Linux</li>
+        </ul>
+        <h2>Development</h2>
+        <h3>Editor</h3>
+        <ul class="list-disc text-muted-foreground/80 text-sm pb-2 ml-6">
+            <li>Editor: VS Code (Vim as shell editor) </li>
+            <li>Font: Inter</li>
+            <li>Theme: Dark 2026</li>
+            <li>Formatting & Linting: ESLint and Ruff</li>
+        </ul>
+        <h3>Browser</h3>
+        <ul class="list-disc text-muted-foreground/80 text-sm pb-2 ml-6">
+            <li>Google chrome for general browsing and main testing</li>
+            <li>Brave for Ad blocking and privacy concerns</li>
+            <li>Opera, firefox and chromium for extensive accessibility and compatibility check.</li>
+            <li>Extensions: Awesome Screen Recorder & Screenshot, Bitwarden Password Manager, ColorZilla, Tag Assistant, Wappalyzer,...</li>
+        </ul>
+        <div class="flex gap-4 mt-8">
+            <a href="/" class={buttonVariants({ variant: "default" })}>
+                <RiHome2Line className="size-4 mr-2" />
+                Go Home
+            </a>
+            <a href="/blog" class={buttonVariants({ variant: "outline" })}> Browse Blog </a>
+        </div>
+    </div>
+</BaseLayout>

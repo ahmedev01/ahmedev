@@ -1,0 +1,114 @@
+{
+  "personal":{
+    "name": "About Ahmed",
+    "profession": "Systems Digger and Bug Creator.",
+    "summary": "Digging into systems is what I love doing to better create links and flows or just to admire the logic behind as if it's some sort of painting.<br> I build products to help small entities with limited ressources and infrastructure to not be left behind.<br> I teach CS to young adults 16 to 22.<br>",
+    "languages": [
+      {
+        "language": "Arabic",
+        "fluency": "Native"
+      },
+      {
+        "language": "French",
+        "fluency": "Fluent"
+      },
+      {
+        "language": "English",
+        "fluency": "Fluent"
+      }
+    ]
+  },
+  "location": {
+    "city": "Manouba",
+    "state": "TN",
+    "country": "TN",
+    "postalCode": "1110"
+  },
+  "contact":{
+    "email": "me@ahmedev.com",
+    "phone": "",
+    "website": "https://ahmedev.com",
+    "socials": [
+      {
+        "platform": "github",
+        "username": "ahmedev01",
+        "url": "https://github.com/ahmedev01"
+      },
+      {
+        "platform": "stack",
+        "username": "ahmedev",
+        "url": "https://stackoverflow.com/users/6686892/ahmedev"
+      }
+    ]
+  },
+  "task": [
+    {
+      "theDate": "Since 2006",
+      "position": "I teach",
+      "occupation": "How to deal with computer systems to young adults.",
+      "where": "Tunisia",
+      "technologies": []
+    },
+    {
+      "theDate": "From 2001 to 2008",
+      "position": "I code",
+      "occupation": "To deliver desktop tools (billing, inventory,...) to local small businesses.",
+      "where": "Tunisia",
+      "technologies": []
+    },
+    {
+      "theDate": "2006",
+      "position": "I obtained my bachelor degree in applied computing.",
+      "occupation": "",
+      "where": "Tunisia",
+      "technologies": []
+    },
+    {
+      "theDate": "From 2008 to 2018",
+      "position": "I still code",
+      "occupation": "To deliver mostly Web systems.",
+      "where": "Tunisia & Remote",
+      "technologies": []
+    },
+    {
+      "theDate": "2011",
+      "position": "I obtained my master's degree in international e-services.",
+      "occupation": "",
+      "where": "Tunisia & Belgium",
+      "technologies": []
+    },
+    {
+      "theDate": "Since 2018",
+      "position": "I review and redesign",
+      "occupation": "To optimize Web systems.",
+      "where": "Tunisia & Remote",
+      "technologies": []
+    }
+  ],
+  "collaboration": [
+    {
+      "theDate": "From 2018 to mid 2020",
+      "position": "Web developer",
+      "agency": "0&1 (zero-and-ones) now  Kerdanet Digital Marketing Ltd in Cyprus ",
+      "collURL": "https://www.kerdanet-dm.com",
+      "where": "Remote",
+      "technologies": []
+    },
+    {
+      "theDate": "From 2020 to mid 2022",
+      "position": "Web Architect & Developer",
+      "agency": "Centsible Clicks in the U.S",
+      "collURL": "https://centsibleclicks.com/",
+      "where": "Remote",
+      "technologies": []
+    },
+    {
+      "theDate": "From mid 2022 to early 2026",
+      "position": "Web Solutions Consultant",
+      "agency": "UpWeb Digital Marketing Ltd in Australia",
+      "collURL": "https://upweb.com/",
+      "where": "Remote",
+      "technologies": []
+    }
+  ]
+}

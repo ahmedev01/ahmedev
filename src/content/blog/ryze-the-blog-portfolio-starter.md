@@ -106,7 +106,7 @@ Every page gets a unique Open Graph image generated at build time using [Satori]
 - **`/og/blog/[id].png`** - per-post OG image showing title, description, category badge, and formatted date
 - **`/og/portfolio/[id].png`** - per-project OG image with the same design
 
-All OG images use Geist fonts loaded from local assets, a dark background (`#18181b`), and an orange accent dot. The shared generation logic lives in `src/lib/og.ts`.
+All OG images use Inter fonts loaded from local assets, a dark background (`#18181b`), and an orange accent dot. The shared generation logic lives in `src/lib/og.ts`.
 
 ### Site Configuration
 

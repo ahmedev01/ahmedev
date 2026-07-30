@@ -1,16 +1,20 @@
 {
-  "github": { "owner": "ahmedev01", "repo": "ahmedev_files" },
+  "github": { "owner": "ahmedev01", "repo": "ahmedev" },
   "domain": "https://ahmedev.com",
   "bNavigation": true,
   "homeLabel": "home",
-  "navigationItems": ["portfolio", "blog", "now", "graveyard"],
+  "navigationItems": ["portfolio", "blog"],
   "bPageFind": true,
   "bThemeToggle": true,
   "bRssFeed": true,
   "bIntroduction": true,
+  "bEnriched": false,
   "introduction": {
-    "badges": ["System Engineer"],
+    "bScrambled": false,
+    "bProfileImg": false,
+    "badges": ["Solution Finder"],
     "heading": "Ahmed Benali",
+    "profilePicUrl": "",
     "subHeadingItems": [
       {
         "type": "mail",
@@ -19,19 +23,17 @@
       },
       {
         "type": "address",
-        "label": "Mornaguia, TN",
-        "url": "https://www.google.com/maps/place/Mornaguia"
+        "label": "Manouba, TN",
+        "url": "https://maps.app.goo.gl/uX2orLBDHktr2zvm9"
       }
     ],
     "socialItems": [
-      { "type": "linkedin", "url": "https://linkedin.com" },
-      { "type": "github", "url": "https://github.com" },
-      { "type": "x", "url": "https://x.com/Ahmedev6" },
+      { "type": "github", "url": "https://github.com/ahmedev01" },
       { "type": "stack", "url": "https://stackoverflow.com/users/6686892/ahmedev" }
     ],
-    "description": "Ryze is a modern personal portfolio and mini blog starter built with Astro 6, React 19, and Tailwind CSS 4. It ships with a blog engine, portfolio system, RSS feed, site search, og images and much more.",
-    "ctaItems": [{ "label": "Resume", "url": "/resume", "variant": "default" }],
-    "support": { "label": "Star on Github", "url": "https://github.com/A58361/Ryze", "variant": "outline" }
+    "description": "<p class='mt-3'>Hi! I'm Ahmed, a bug creator and fixer. I'm into OSS and care about online privacy.</p><p class='mt-3'>I'm in the business since the <a class='underline font-semibold' href='https://en.wikipedia.org/wiki/Floppy_disk'>floppy disks</a> existed. Back in the days, I liked to refer to myself as a programmer but now with all the names around I'm little confused.</p><p class='mt-3'>I mainly study, teach young adults, review and write instructions to computers. I also like to help small businesses get a presence in the Web. I decided to start to post <a class='underline font-semibold' href='http://ahmedev.com/portfolio'>my projects here</a>.</p><p class='mt-3'>I continue pivoting like the field does and <a class='underline font-semibold' href='http://ahmedev.com/now'>my current focus</a> is understanding AI systems.</p><p class='mt-3'>This is a 100% human content and you can read my current <a class='underline font-semibold' href='http://ahmedev.com/ai'>AI manifesto</a>.</p>",
+    "ctaItems": [{ "label": "Details", "url": "/about", "variant": "default" }],
+    "support": { "label": "Code", "url": "https://github.com/ahmedev01", "variant": "outline" }
   },
   "featured": {
     "portfolio": { "visible": true },

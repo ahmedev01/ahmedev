@@ -1,0 +1,151 @@
+---
+import AboutLayout from "@/layouts/ResumeLayout.astro";
+import about from "@/about-config.json";
+import { RiCalendar2Line, RiMailLine, RiMapPin2Line, RiGlobalLine, RiLinkedinBoxLine, RiGithubLine, RiTwitterLine, RiArrowRightSLine, RiExternalLinkLine, RiStackOverflowLine } from "@remixicon/react";
+import BackButton from "@/components/static/BackButton.astro";
+import sanitizeHtml from "sanitize-html";
+
+const formatDate = (date: string) => {
+    if (date === "Present") return "Present";
+    return new Date(date).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "short",
+    });
+};
+
+const locationStr = `${about.location.city}, ${about.location.country}`;
+const cleanSummary = sanitizeHtml(about.personal.summary,{
+    allowedTags: ['br']
+});
+---
+
+<AboutLayout title="About Ahmed" description={about.personal.summary} image="/og/default.png">
+    <div class="my-10 p-6 space-y-14 border border-border">
+        <!-- Header -->
+        <header class="space-y-5">
+            <BackButton url="/" />
+            <div>
+                <h1 class="text-4xl font-semibold tracking-tight">{about.personal.name}</h1>
+                <p class="text-lg text-muted-foreground mt-1.5">{about.personal.profession}</p>
+            </div>
+            <!-- Languages -->
+            {
+                about.personal.languages.length > 0 && (
+                    <div class="flex flex-wrap gap-x-8 gap-y-2">{about.personal.languages.map((lang) => (
+                         <div class="flex items-center gap-2">
+                            <span class="text-xs font-medium">{lang.language}</span>
+                            <span class="text-xs text-muted-foreground">({lang.fluency})</span>
+                        </div>
+                    ))}
+                    </div>
+                )
+            }
+            <div class="flex flex-wrap gap-x-5 gap-y-2 text-xs text-muted-foreground">
+                <a href={`mailto:${about.contact.email}`} class="inline-flex items-center gap-1.5 hover:text-foreground animation">
+                    <RiMailLine className="size-4" />
+                    {about.contact.email}
+                </a>
+                <span class="inline-flex items-center gap-1.5">
+                    <RiMapPin2Line className="size-4" />
+                    {locationStr}
+                </span>
+                <a href={about.contact.website} target="_blank" class="inline-flex items-center gap-1.5 hover:text-foreground animation">
+                    <RiGlobalLine className="size-4" />
+                    {about.contact.website.replace("https://", "")}
+                </a>
+            </div>
+
+            <div class="flex gap-4">
+                {
+                    about.contact.socials.map(
+                        (s) =>
+                            ({
+                                github: (
+                                    <a href={s.url} target="_blank" class="text-muted-foreground hover:text-foreground animation" aria-label="github">
+                                        <RiGithubLine className="size-5" />
+                                    </a>
+                                ),
+                                stack: (
+                                    <a href={s.url} target="_blank" class="text-muted-foreground hover:text-foreground animation" aria-label="twitter">
+                                        <RiStackOverflowLine className="size-5" />
+                                    </a>
+                                ),
+                            })[s.platform],
+                    )
+                }
+            </div>
+        </header>
+
+        <!-- Summary -->
+        <section>
+            <div class="flex items-center gap-3 mb-5">
+                <span class="text-xs font-mono tracking-[0.15em] text-muted-foreground">SUMMARY</span>
+                <div class="flex-1 border-t border-border"></div>
+            </div>
+            <p class="text-sm leading-relaxed text-foreground/80" set:html={cleanSummary}>
+                
+            </p>
+        </section>
+
+        <!-- Dates -->
+        <section>
+            <div class="flex items-center gap-3 mb-6">
+                <span class="text-xs font-mono tracking-[0.15em] text-muted-foreground">KEY DATES</span>
+                <div class="flex-1 border-t border-border"></div>
+            </div>
+            <div class="space-y-8">
+                {
+                    about.task.map((exp) => (
+                        <div class="border-l-2 border-border pl-5 space-y-3">
+                            <div>
+                                <h3 class="text-base font-medium">{exp.theDate}</h3>
+                                <p class="text-xs text-muted-foreground mt-0.5">
+                                    {exp.position}
+                                    <span class="mx-2">·</span>
+                                    {exp.where}
+                                </p>
+                            </div>
+                            <p class="text-xs text-foreground/70">{exp.occupation}</p>
+                            <div class="flex flex-wrap gap-1.5">
+                                {exp.technologies.map((t) => (
+                                    <span class="inline-flex items-center rounded-full border border-border bg-muted/50 px-2.5 py-0.5 text-[11px] font-medium text-muted-foreground">{t}</span>
+                                ))}
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </section>
+
+        <!-- Collaboration -->
+        <section>
+            <div class="flex items-center gap-3 mb-6">
+                <span class="text-xs font-mono tracking-[0.15em] text-muted-foreground">COLLABORATIONS</span>
+                <div class="flex-1 border-t border-border"></div>
+            </div>
+            <div class="space-y-6">
+                {
+                    about.collaboration.map((coll) => (
+                        <div class="border-l-2 border-border pl-5 space-y-2">
+                            <div>
+                                <h3 class="text-base font-medium">{coll.theDate}</h3>
+                                <p class="text-xs text-muted-foreground mt-0.5">
+                                    {coll.position} in <a href={coll.collURL}>{coll.agency}</a>
+                                    <span class="mx-2">·</span>
+                                    <span class="inline-flex items-center gap-1">
+                                        {coll.where}
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5">
+                                {coll.technologies.map((t) => (
+                                    <span class="inline-flex items-center rounded-full border border-border bg-muted/50 px-2.5 py-0.5 text-[11px] font-medium text-muted-foreground">{t}</span>
+                                ))}
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </section>
+    </div>
+</AboutLayout>
