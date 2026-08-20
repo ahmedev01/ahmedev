@@ -1,23 +1,22 @@
 [
   {
-    "id": "nova",
+    "id": "hydraulicassistant",
     "data": {
-      "date": "17-02-2025",
-      "category": "ai",
-      "title": "Nova",
-      "description": "Autonomous research agent that navigates academic papers, extracts claims, and cross-references findings across multiple sources",
-      "tags": ["Python", "PyTorch", "Transformers", "LangChain", "ChromaDB"],
+      "date": "17-06-2018",
+      "category": "software",
+      "title": "Hydraulic Assistant",
+      "description": "Portable tool to help calculate different HYdraulic construction projects indicator.",
+      "tags": ["Java", "Apache NetBeans", "CSV"],
       "status": "prototype"
     },
-    "introduction": "Keeping up with research across ML, computational biology, and systems is impossible for a single person. Nova is a research agent that reads papers, traverses citation graphs, extracts methodological claims, and builds a cross-referenced knowledge graph of experimental results - surfacing contradictions and gaps that would otherwise take months to notice.",
+    "introduction": null,
     "links": [
-      { "label": "gitHub", "url": "https://github.com/" },
-      { "label": "demo", "url": "https://nova-demo.vercel.app" }
+      { "label": "DOWNLOAD", "url": "https://bit.ly/hydraulicAssistant" }
     ],
-    "video": "https://youtube.com/embed/s1zVbdanWwc",
+    "video": null,
     "brief": {
-      "capabilities": ["Parses and indexes research papers from arXiv, PubMed, and open-access repositories with automatic metadata extraction", "Extracts fine-grained claims from paper text using a fine-tuned NLI model trained on scientific discourse", "Builds a cross-referenced knowledge graph connecting claims, citations, and experimental results", "Supports natural language queries like 'what evidence exists for X' and returns cited passages with confidence scores", "Tracks contradictions and replication results across papers, flagging when new findings challenge existing claims", "Generates literature review drafts organized by thematic clusters rather than chronological order"],
-      "architecture": ["Multi-stage ingestion pipeline: PDF parsing via Grobid, structural segmentation using layout-aware transformers, then claim extraction through a fine-tuned DeBERTa-v3 model operating on sentence windows with overlapping context. Each extracted claim is normalized to a subject-predicate-object triple and embedded using all-MiniLM-L6-v2.", "Graph-based retrieval layer using a hybrid of dense vector search (ChromaDB) and citation graph traversal. Queries are decomposed into sub-questions, each routed to either the vector store for semantic similarity or the graph store for structural relationships. Results are re-ranked by a cross-encoder that scores relevance to the original question."]
+      "capabilities": ["Import project details from CSV files", "Export results to CSV."],
+      "architecture": ["Requires JRE"]
     }
   },
   {
@@ -83,24 +82,24 @@
     }
   },
   {
-    "id": "aureus",
+    "id": "tunpy",
     "data": {
-      "date": "28-05-2026",
+      "date": "10-06-2026",
       "category": "software",
-      "title": "Aureus",
-      "description": "TypeScript CLI dev tool for automatic changelog generation based on conventional commits",
-      "tags": ["TypeScript", "Node.js", "Husky", "Git", "NPM"],
+      "title": "Tunpy",
+      "description": "An adapted version of the Thonny IDE with a custom Python language interpreter",
+      "tags": ["Python", "Interpreter", "IDE", "OSS", "Git"],
       "status": "production"
     },
-    "introduction": "Repository compliance is often an afterthought - bolted on with brittle shell scripts that work on one machine and fail silently on another. Manual setup of Git hooks, Commitlint, and Semantic Release is error-prone, with team members diverging in local configurations and breaking changelog pipelines with a single malformed commit. Aureus wraps all of this into a single, idempotent CLI command that scaffolds the correct files and exits cleanly.",
+    "introduction": "<p class='mt-2'>We all know the <code>'repeat ... until'</code> loop in algorithmic learning.</p> <p class='mt-2'>The Tunisian algorithms curriculum in secondary schools uses it despite the use of python as the main programming language. And, <a class='underline' href='https://www.upgrad.com/tutorials/software-engineering/python-tutorial/python-do-while-loop/#faqs'>python doesn't have that loop in its syntax.</a></p> <p class='mt-2'>As a turnaround, the teachers used the <code>'while not'</code> syntax which is algorimically wrong. And what make it harder to correctly emulate the behaviour of the repeat loop is that the use of the keyword <code>break</code> is forbidden inside code blocks.</p><p class='mt-2 font-semibold'>Tunpy comes with a simple idea; add the <code>'repeat ... until'</code> loop to the python syntax.</p><p class='mt-2'>As a result the below syntax is born:</p><div class='bg-muted p-2 m-2'><p class='ml-5'><code>dorepeat:</code></p><p class='ml-7'><code >   instructions</code></p><p class='ml-7'><code>   upuntil exit_condition</code></p></div><p class='mt-2'>Also, Tunpy comes packed with all the necessary libraries used in the curriculum.</p>",
     "links": [
-      { "label": "gitHub", "url": "https://github.com/A58361/aureus" },
-      { "label": "npm", "url": "https://npmjs.com/package/aureus" }
+      { "label": "gitHub", "url": "https://github.com/ahmedev01/tunpy" },
+      { "label": "DOWNLOAD", "url": "https://github.com/ahmedev01/tunpy/releases/tag/v5.0.0" }
     ],
-    "video": "https://youtube.com/embed/ScMzIvxBSi4",
+    "video": null,
     "brief": {
-      "capabilities": ["Scaffolds full repository configurations out-of-the-box, ensuring immediate consistency across projects with zero manual setup", "Handles core structural configurations locally with rapid execution speeds, bypassing heavy network overhead or bloated dependency trees", "Automatically enforces strict repository standards by initializing and configuring Commitlint to validate local commit messages", "Installs and configures Husky hooks cleanly within local environments to capture code issues before they reach a remote server", "Implements custom local validation layers engineered specifically not to break or cancel legitimate automation workflows (like GitHub Actions) during remote push processes", "Integrates automated semantic versioning and release configurations to eliminate manual tag management and enforce strict delivery versioning"],
-      "architecture": ["Modular orchestration engine using asynchronous child-process pooling with configurable concurrency limits and per-step timeout guards. Each pipeline step (hook init, commitlint config, semantic release setup) is an isolated module emitting structured events.", "Config-driven scaffolding layers that compose from a declarative spec - reading a .aureusrc or package.json extensions key to determine which modules to activate. The resolution algorithm prioritizes explicit config over convention, with sensible defaults for each detected project type."]
+      "capabilities": ["Correctly write the repeat loop while preserving the python syntax philosophy.", "Natively integrate all libraries used in the curriculum.", "Natively integrate the 'Ajouter le code Qt5' plugin used by scientific students when using Qt5 interfaces.", "Continuous maintenaince according to Thonny versionning.", "French as a default language.","Bug report to me@ahmedev.com"],
+      "architecture": ["Custom python 3.14.5", "Thonny 5.0.0", "Pyqt5_qt5_designer 0.0.14", "Pandas 3.0.3", "Numpy 2.4.6", "Matplotlib 3.10.9", "Xlrd 2.0.2", "Xlsxwriter 3.2.9", "Xlwt 1.3.0", "Openpyxl 3.1.5", "Pickle-mixin 1.0.2"]
     }
   }
 ]

@@ -1,6 +1,7 @@
 ---
 import type { portfolioConfig } from "@/lib/types";
 import { RiArrowRightUpLine } from "@remixicon/react";
+import sanitizeHtml from "sanitize-html";
 
 export interface Props {
     item: portfolioConfig;
@@ -8,11 +9,20 @@ export interface Props {
 
 const { item } = Astro.props;
 const links = item?.links ?? [];
-const introduction = item?.introduction ?? "";
+const introduction = item?.introduction ?? "<p class='text-center'>Nothing to say. Move around!</p><p class='text-center'5>This is an archived project ... probably! </p>";
 const capabilities = item?.brief?.capabilities ?? [];
 const architecture = item?.brief?.architecture ?? [];
 const hasCapabilities = capabilities.length > 0;
 const hasArchitecture = architecture.length > 0;
+
+const cleanIntroduction = sanitizeHtml(introduction,{
+    allowedTags: ['p','a','code','br', 'div'],
+    allowedAttributes: {
+        'p': ['class'],
+        'div': ['class'],
+        'a': ['href','class']
+    }
+});
 ---
 
 <section class="border border-border p-6 flex flex-wrap">
@@ -37,10 +47,10 @@ const hasArchitecture = architecture.length > 0;
     }
 
     {
-        introduction && (
+        cleanIntroduction && (
             <div class="w-full hidden peer-checked/intro:block h-100 overflow-y-auto no-scrollbar mt-6">
                 <div class="h-full flex items-center justify-center p-6">
-                    <p class="text-sm leading-relaxed text-secondary-foreground/80 whitespace-pre-line max-w-prose text-center">{introduction}</p>
+                    <div class="text-sm text-secondary-foreground/80 whitespace-pre-line max-w-prose leading-relaxed" set:html={cleanIntroduction}></div>
                 </div>
             </div>
         )
