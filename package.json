@@ -26,7 +26,7 @@
   "homepage": "ahmedev.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ahmedev01/ahmedev.git"
+    "url": "git@github.com:ahmedev01/ahmedev.git"
   },
   "license": "GPL-3.0-only",
   "author": "Ahmed Benali <ahmedbenali1110@gmail.com>",
