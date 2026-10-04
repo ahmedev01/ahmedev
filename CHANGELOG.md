@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## [v3.0.4](https://github.com/ahmedev01/ahmedev_files/releases/tag/v3.0.4) | 2026-10-04
+
+### Bug Fixes
+- portfolio page completeexit [8f9ca53](https://github.com/ahmedev01/ahmedev_files/commit/8f9ca53)
+### Other
+- portfolio page complete [be3f2e3](https://github.com/ahmedev01/ahmedev_files/commit/be3f2e3)
+- modify some projects [59db95d](https://github.com/ahmedev01/ahmedev_files/commit/59db95d)
+- add new content and pages [6a489d9](https://github.com/ahmedev01/ahmedev_files/commit/6a489d9)
+- added my own info [42ba1dd](https://github.com/ahmedev01/ahmedev_files/commit/42ba1dd)
+- site config [d9cd2ea](https://github.com/ahmedev01/ahmedev_files/commit/d9cd2ea)
+
 ## [v3.0.3](https://github.com/ahmedev01/ahmedev/releases/tag/v3.0.3) | 2026-07-09
 
 ### Bug Fixes
