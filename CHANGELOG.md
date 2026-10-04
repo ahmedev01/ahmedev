@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [v3.0.9](https://github.com/ahmedev01/ahmedev_files/releases/tag/v3.0.9) | 2026-10-04
+
+### Bug Fixes
+- portfolio page completeexit [bffdbc2](https://github.com/ahmedev01/ahmedev_files/commit/bffdbc2)
+
 ## [v3.0.8](https://github.com/ahmedev01/ahmedev_files/releases/tag/v3.0.8) | 2026-10-04
 
 ### Bug Fixes
