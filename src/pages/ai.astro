@@ -1,0 +1,22 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { RiHome2Line } from "@remixicon/react";
+import { buttonVariants } from "@/components/ui/button";
+---
+
+<BaseLayout title="AI Manifesto" description="How and When I use AI" image="/og/default.png">
+    <div class="flex flex-col justify-center min-h-[60vh] ml-8">
+        <h1 class="text-4xl font-semibold text-muted-foreground/30 select-none">AI Manifesto</h1>
+        <h2 class="py-4 text-2xl font-semibold select-none">How I use AI</h2>
+        <p class="space-y-6 text-sm leading-relaxed opacity-80 pb-2">I have never used AI to generate text in place of my words. None of the posts published on this site (ahmedev.com) were written using an AI tool. Otherwise, where will be the fun in that and will defeat the purpose of having a blog.</p>
+        <p class="space-y-6 text-sm leading-relaxed opacity-80 pb-2">Yes, I do usually use different AIs to discover things, test theories and snippets, quicly fixing minor inconsistencies and see how instructions would be written against mine, or research — the way I use a search engine or other tools, for my work and other non-work related stuff.</p>
+        <p class="space-y-6 text-sm leading-relaxed opacity-80 pb-2">This page was created in response to <a href="https://www.bydamo.la/p/ai-manifesto">the /ai manifesto</a>. The point of this page is to let you know that nothing claiming to be me is written by an AI.</p>
+        <div class="flex gap-4 mt-8">
+            <a href="/" class={buttonVariants({ variant: "default" })}>
+                <RiHome2Line className="size-4 mr-2" />
+                Go Home
+            </a>
+            <a href="/blog" class={buttonVariants({ variant: "outline" })}> Browse Blog </a>
+        </div>
+    </div>
+</BaseLayout>

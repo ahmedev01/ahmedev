@@ -1,0 +1,180 @@
+[
+  {
+    "id": "hydraulicassistant",
+    "data": {
+      "date": "17-06-2018",
+      "category": "software",
+      "title": "Hydraulic Assistant",
+      "description": "Portable tool to help calculate different HYdraulic construction projects indicator.",
+      "tags": ["Java", "Apache NetBeans", "CSV"],
+      "status": "prototype"
+    },
+    "introduction": null,
+    "links": [
+      { "label": "DOWNLOAD", "url": "https://bit.ly/hydraulicAssistant" }
+    ],
+    "video": null,
+    "brief": {
+      "capabilities": ["Import project details from CSV files", "Export results to CSV."],
+      "architecture": ["Requires JRE"]
+    }
+  },
+  {
+    "id": "RCPro-paid-trial",
+    "data": {
+      "date": "09-07-2019",
+      "category": "plugins",
+      "title": "RCPro paid trial",
+      "description": "Paid Trial add-on for Restrict Content Pro WordPress plugin",
+      "tags": ["WordPress", "Restrict content", "Hooks & Filters"],
+      "status": "archived"
+    },
+    "introduction": "Paid Trial add-on for Restrict Content Pro to offer an additional option to charge customers a small fee to access the content as a test period rather than a free trial period.",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/ahmedev01/rcp-paid-trial" },
+      { "label": "Restrict content homepage", "url": "https://www.restrictcontent.com/" }
+    ],
+    "video": "",
+    "brief": {
+      "capabilities": ["Add a fee to the trial period", "Restrict content add-on for WordPress"],
+      "architecture": ["Use of RCP hooks and filters", "WordPress plugin development guidelines"]
+    }
+  },
+  {
+    "id": "Mediateur-search",
+    "data": {
+      "date": "22-04-2021",
+      "category": "API",
+      "title": "Mediateur Search",
+      "description": "WordPress plugin to generate RGPD conformity contract as a pdf file that can be e-signed.",
+      "tags": ["WordPress", "API", "Php", "Tcpdf", "e-signature"],
+      "status": "archived"
+    },
+    "introduction": "A WordPress plugin that uses INSEE.fr API to retrieve organizations data and generate RGPD conformity contract between the entreprise and the mediateur as a pdf file that can be e-signed.",
+    "links": [{ "label": "GitHub", "url": "https://github.com/ahmedev01/mediateur-search" }],
+    "video": null,
+    "brief": {
+      "capabilities": ["Get entreprise data from open gov INSEE.fr API", "Contract generation", "Data processing", "pdf file e-signature"],
+      "architecture": ["Use WordPress plugin guidelines, hooks and filters to integrate INSEE French entreprises data into an RGPD confor;ity contract using pdf generation and e-signature"]
+    }
+  },
+  {
+    "id": "paymee-for-woocommerce",
+    "data": {
+      "date": "14-06-2022",
+      "category": "Woocommerce Extension",
+      "title": "Paymee for WooCommerce",
+      "description": "Paymee WooCommerce extension to use Paymee as a payment gateway.",
+      "tags": ["WordPress", "WooCommerce", "API integration", "Payment gateway"],
+      "status": "archived"
+    },
+    "introduction": "Paymee WooCommerce extension adds the ability to use Paymee payment system as a payment gateway in your WooCommerce powered website.",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/ahmedev01/paymee-for-woocommerce" },
+      { "label": "Paymee", "url": "https://www.paymee.tn/" }
+    ],
+    "video": null,
+    "brief": {
+      "capabilities": ["Add Paymee as a payment method", "Integrate the payment status with the WooCommerce order status using API interaction"],
+      "architecture": ["WooCommerce extension architecture","Real time API integration and interaction"]
+    }
+  },
+  {
+    "id": "syspay-for-woocommerce",
+    "data": {
+      "date": "03-02-2024",
+      "category": "Woocommerce Extension",
+      "title": "SysPay for WooCommerce",
+      "description": "Syspay WooCommerce extension adds SysPay payment in a WooCommerce powered website.",
+      "tags": ["WordPress", "WooCommerce", "API integration", "Payment gateway"],
+      "status": "archived"
+    },
+    "introduction": "Syspay WooCommerce extension adds the ability to use syspay payment system as a payment gateway in a WooCommerce powered website.",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/ahmedev01/Syspay-for-WooCommerce" },
+      { "label": "SysPay", "url": "https://syspay.com/" }
+    ],
+    "video": null,
+    "brief": {
+      "capabilities": ["Add SysPay as a payment method"],
+      "architecture": ["WooCommerce extension architecture","Real time API integration and interaction"]
+    }
+  },
+  {
+    "id": "smsMode-for-woocommerce",
+    "data": {
+      "date": "14-06-2022",
+      "category": "Woocommerce Extension",
+      "title": "smsMode for WooCommerce",
+      "description": "Add sms confirmation upon checkout with woocommerce",
+      "tags": ["WordPress", "WooCommerce", "API integration", "sms confirmation"],
+      "status": "archived"
+    },
+    "introduction": "Manage SMS sending using smsMode services and API for confirmation in the checkout process in WooCommerce.",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/ahmedev01/smsMode-for-WC" },
+      { "label": "smsMode", "url": "https://www.smsmode.com/en/" }
+    ],
+    "video": null,
+    "brief": {
+      "capabilities": ["Custom 4-layer PCB with STM32H743 MCU, TMC5160 closed-loop stepper drivers, and isolated digital I/O for limit switches and relays", "Real-time firmware running FreeRTOS with a dedicated motion planning task at 40kHz step generation using Bresenham interpolation with look-ahead acceleration profiling", "gRPC bi-directional streaming API for toolpath upload, real-time position feedback, and parameter adjustment without pausing operations", "Web-based dashboard with live 3D toolpath preview, axis position readout, speed override, and job queue management", "Automatic calibration routine using limit switch homing and probe-based tool length offset measurement with 0.01mm repeatability"],
+      "architecture": ["Firmware architecture follows a three-layer design: a hardware abstraction layer (HAL) wrapping TIM peripherals, GPIO, and DMA for step generation; a motion planning layer implementing a look-ahead acceleration planner with trapezoidal velocity profiles and corner rounding; and a command layer that parses buffered G-code blocks into the planner's internal trajectory queue. The planner runs at 1kHz, outputting position setpoints to the step generation ISR running at 40kHz via a double-buffered pipeline."]
+    }
+  },
+  {
+    "id": "wordpress-woocommerce-developement",
+    "data": {
+      "date": "20-04-2026",
+      "category": "Websites & Web Apps",
+      "title": "WordPress/WooCommerce Developement",
+      "description": "Websites built on WordPress and WooCommerce over the years for small businesses to cut costs.",
+      "tags": ["WordPress", "WooCommerce", "API integration", "Analytics", "Online business strategies", "Business solutions", "E-commerce"],
+      "status": "production"
+    },
+    "introduction": "<h4>What I delivered and still on production:</h4><br><ul class='built'><li class='built'><a href='https://www.vermeg.com/'>vermeg</a> (WordPress, Full website review and health audit)</li><li class='built'><a href='https://www.gabrielpitt.com/'>Gabriel Pitt</a> (WordPress/WooCommerce full project)</li><li class='built'><a href='https://recarta.co.uk/'>recarta</a> (WordPress, Full project)</li><li class='built'><a href='https://fasa.co.za/'>FASA</a> (WordPress/WooCommerce, Full Audit, Analytics & performance improvements)</li><li class='built'><a href='https://lewinephoto.com/'>Rob Lewine</a> (WordPress, Code improvements & performance enhancement)</li><li class='built'><a href='https://countylinen.co.uk/'>County Linen & Workwear</a> (WordPress, full project)</li><li class='built'><a href='https://hiddentalentsaba.com/'>Hidden Talents ABA</a> (WordPress, Custom tracking functionnalities)</li><li class='built'><a href='https://excelchamps.com/'>Excel Champs</a> (WordPress, Code review & improvements)</li><li class='built'><a href='https://chromeadvisory.com/'>Chrome Advisory</a> (WordPress, full project)</li><li class='built'><a href='https://bojsen.dk/'>Bojseen Web</a> (WordPress)</li><li class='built'><a href='https://www.lovyforme.com/'>Lovy Forme</a> (WordPress/Woocommerce, Code debugging)</li><li class='built'><a href='https://divasoft.ee/en/'>DIVASOFT</a> (WordPress)</li><li class='built'><a href='https://electro-news.eu/'>electro news</a> (WordPress, Custom developement)</li><li class='built'><a href='https://perlingerconsulting.com/'>Perlinger Consulting</a> (WordPress, full project)</li><li class='built'><a href='https://cleanbright.com.au/'>cleanbright</a> (WordPress, Structure review & improvements, debugging)</li><li class='built'><a href='https://www.excelforma.fr/'>Excel Forma</a> (WordPress)</li><li class='built'><a href='https://www.monsieurvtc.fr/'>Formation VTC</a> (WordPress)</li><li class='built'><a href='https://www.jaquo.fr/'>Jaquo</a> (WooCommerce, Add e-commerce capability)</li><li class='built'><a href='https://avestan.ch/'>Avestan SA</a> (WordPress, Full project)</li><li class='built'><a href='https://externalise.ch/'>externalise</a> (WordPress, Full project)</li><li class='built'><a href='https://guruprojects.com/'>GURU</a> (WordPress)</li><li class='built'><a href='https://morelaundries.co.uk/'>MORE Laundries</a> (WordPress, full project)</li><li class='built'><a href='http://www.cosmedis.tn/'>COSMEDIS</a> (WordPress, Full project)</li></ul>",
+    "video": null,
+    "brief": {
+      "capabilities": ["Custom design and architecture", "CMS custom developement", "Business apps", "Web standards conformity"],
+      "architecture": ["Building small businesses web apps following the business data flow and structure with latest Web standards to help their web presence."]
+    }
+  },
+  {
+    "id": "various-developement",
+    "data": {
+      "date": "20-04-2026",
+      "category": "Websites & Web Apps",
+      "title": "Various websites/CMS developement",
+      "description": "Websites built over the years",
+      "tags": ["Prestashop", "OpenCart", "Shopify", "Wix", "Roots", "Squarespace", "Analytics", "Online business strategies", "Business solutions", "E-commerce"],
+      "status": "production"
+    },
+    "introduction": "<h4>What I built or participated in its build:</h4><br><ul class='built'><li class='built'><a href='https://www.ackits.com/'>AC Kits</a> (OpenCart, Code and structure review & improvements, Malware cleaning and forums restoration.)</li><li class='built'><a href='https://antegowheels.com/'>Antego Wheels</a> (Shopify full project)</li><li class='built'><a href='https://www.bikramyogaspain.es/'>BIKRAM</a> (Shopify, Code and structure review & improvements)</li><li class='built'><a href='https://bestlanguageservices.com/'>Best Languages Services</a> (React, Code and structure improvements for better server performance)</li><li class='built'><a href='https://accueil.son-art.ch/'>Sonart</a> (Prestashop for the shop full project, WordPress for the renting service full project)</li><li class='built'><a href='https://www.chacunsoncafe.fr/'>CHACUN SON CAFE</a> (Prestashop, real time cart update debugging)</li><li class='built'><a href='https://www.magellantutoring.com/'>Magellan Tutoring</a> (Squarespace)</li></ul>",
+    "links": [],
+    "video": null,
+    "brief": {
+      "capabilities": ["Custom design and architecture", "CMS custom developement", "Business apps", "Web standards conformity"],
+      "architecture": ["Building small businesses web apps following the business data flow and structure with latest Web standards to help their web presence."]
+    }
+  },
+  {
+    "id": "tunpy",
+    "data": {
+      "date": "10-06-2026",
+      "category": "software",
+      "title": "Tunpy",
+      "description": "An adapted version of the Thonny IDE with a custom Python language interpreter",
+      "tags": ["Python", "Interpreter", "IDE", "OSS", "Git"],
+      "status": "production"
+    },
+    "introduction": "<p class='mt-2'>We all know the <code>'repeat ... until'</code> loop in algorithmic learning.</p> <p class='mt-2'>The Tunisian algorithms curriculum in secondary schools uses it despite the use of python as the main programming language. And, <a class='underline' href='https://www.upgrad.com/tutorials/software-engineering/python-tutorial/python-do-while-loop/#faqs'>python doesn't have that loop in its syntax.</a></p> <p class='mt-2'>As a turnaround, the teachers used the <code>'while not'</code> syntax which is algorimically wrong. And what make it harder to correctly emulate the behaviour of the repeat loop is that the use of the keyword <code>break</code> is forbidden inside code blocks.</p><p class='mt-2 font-semibold'>Tunpy comes with a simple idea; add the <code>'repeat ... until'</code> loop to the python syntax.</p><p class='mt-2'>As a result the below syntax is born:</p><div class='bg-muted p-2 m-2'><p class='ml-5'><code>dorepeat:</code></p><p class='ml-7'><code >   instructions</code></p><p class='ml-7'><code>   upuntil exit_condition</code></p></div><p class='mt-2'>Also, Tunpy comes packed with all the necessary libraries used in the curriculum.</p>",
+    "links": [
+      { "label": "gitHub", "url": "https://github.com/ahmedev01/tunpy" },
+      { "label": "DOWNLOAD", "url": "https://github.com/ahmedev01/tunpy/releases/tag/v5.0.0" }
+    ],
+    "video": null,
+    "brief": {
+      "capabilities": ["Correctly write the repeat loop while preserving the python syntax philosophy.", "Natively integrate all libraries used in the curriculum.", "Natively integrate the 'Ajouter le code Qt5' plugin used by scientific students when using Qt5 interfaces.", "Continuous maintenaince according to Thonny versionning.", "French as a default language.","Bug report to me@ahmedev.com"],
+      "architecture": ["Custom python 3.14.5", "Thonny 5.0.0", "Pyqt5_qt5_designer 0.0.14", "Pandas 3.0.3", "Numpy 2.4.6", "Matplotlib 3.10.9", "Xlrd 2.0.2", "Xlsxwriter 3.2.9", "Xlwt 1.3.0", "Openpyxl 3.1.5", "Pickle-mixin 1.0.2"]
+    }
+  }
+]
