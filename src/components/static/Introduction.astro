@@ -9,7 +9,7 @@ import { Tilt } from "../client/Tilt";
 import sanitizeHtml from "sanitize-html";
 
 const cleanDescription = sanitizeHtml(site_config.introduction.description,{
-    allowedTags: ['p','a', 'br', 'ul', 'li'],
+    allowedTags: ['p','a'],
     allowedAttributes: {
         'p': ['class'],
         'a': ['href','class']

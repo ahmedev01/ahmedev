@@ -16,11 +16,13 @@ const hasCapabilities = capabilities.length > 0;
 const hasArchitecture = architecture.length > 0;
 
 const cleanIntroduction = sanitizeHtml(introduction,{
-    allowedTags: ['p','a','code','br', 'div'],
+    allowedTags: ['p','a','code','br', 'div','ul','li','h4','pre'],
     allowedAttributes: {
         'p': ['class'],
         'div': ['class'],
-        'a': ['href','class']
+        'a': ['href','class'],
+        'ul': ['class'],
+        'li': ['class'],
     }
 });
 ---
@@ -48,7 +50,7 @@ const cleanIntroduction = sanitizeHtml(introduction,{
 
     {
         cleanIntroduction && (
-            <div class="w-full hidden peer-checked/intro:block h-100 overflow-y-auto no-scrollbar mt-6">
+            <div class="w-full hidden peer-checked/intro:block h-full overflow-y-auto no-scrollbar mt-6">
                 <div class="h-full flex items-center justify-center p-6">
                     <div class="text-sm text-secondary-foreground/80 whitespace-pre-line max-w-prose leading-relaxed" set:html={cleanIntroduction}></div>
                 </div>

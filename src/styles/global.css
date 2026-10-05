@@ -229,3 +229,7 @@
         background-color: transparent;
     }
 }
+
+.built{
+    list-style: square;
+}
