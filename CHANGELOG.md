@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [v3.0.11](https://github.com/ahmedev01/ahmedev_files/releases/tag/v3.0.11) | 2026-10-05
+
+### Bug Fixes
+- protfolio items reorganised [0557c09](https://github.com/ahmedev01/ahmedev_files/commit/0557c09)
+
 ## [v3.0.10](https://github.com/ahmedev01/ahmedev_files/releases/tag/v3.0.10) | 2026-10-05
 
 ### Bug Fixes

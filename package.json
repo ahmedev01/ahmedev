@@ -1,7 +1,7 @@
 {
   "name": "ahmedev",
   "type": "module",
-  "version": "3.0.10",
+  "version": "3.0.11",
   "description": "An astro starter for personal portfolio and mini blogs",
   "keywords": [
     "astro",
